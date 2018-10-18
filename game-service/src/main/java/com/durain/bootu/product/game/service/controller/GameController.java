@@ -28,8 +28,8 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-@RequestMapping("/game")
-@Api(description = "Game Services", tags = { "Game" })
+@RequestMapping("/games")
+@Api(description = "Game Services", tags = { "Games" })
 public class GameController {
 
 	@Autowired

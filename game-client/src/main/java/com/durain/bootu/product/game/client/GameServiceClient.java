@@ -13,12 +13,12 @@ import com.durain.bootu.product.game.common.GameInfoResponse;
 @FeignClient(name = "DURAIN-GAMES")
 public interface GameServiceClient {
 
-	@GetMapping("/game/msg")
+	@GetMapping("/games/msg")
 	String gameMsg();
 	
-	@PostMapping("/game/listFromOrder")
+	@PostMapping("/games/listFromOrder")
 	public List<GameInfoResponse> listFromOrder(@RequestBody List<String> productIdList);
 	
-	@PostMapping("/game/decreaseGameStock")
+	@PostMapping("/games/decreaseGameStock")
 	public void decreaseGameStock(@RequestBody List<GameDescreaseStockRequest> cardDTOList);
 }
