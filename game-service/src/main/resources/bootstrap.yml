@@ -7,7 +7,18 @@ spring:
         enabled: true
         service-id: BOOTU-CONFIG
       profile: dev
+  zipkin:
+    base-url: http://10.0.0.211:9411/
+    sender:
+      type: web
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1.0
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8861/eureka/
+logging:
+  level:
+    org.springframework.cloud.netflix.feign: debug
