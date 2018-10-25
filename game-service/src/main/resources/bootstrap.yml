@@ -18,7 +18,9 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8861/eureka/
+      defaultZone: http://bootu-eureka-1:8861/eureka/,http://bootu-eureka-2:8861/eureka/
+  instance:
+    prefer-ip-address: true
 logging:
   level:
     org.springframework.cloud.netflix.feign: debug
