@@ -17,6 +17,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
+		<protobuf-maven-plugin.version>0.5.1</protobuf-maven-plugin.version>
+		<grpc-spring-boot-starter.version>2.3.2</grpc-spring-boot-starter.version>
 	</properties>
 
 	<dependencies>
@@ -82,6 +84,12 @@
 			<groupId>com.durain.bootu</groupId>
 			<artifactId>game-common</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>net.devh</groupId>
+			<artifactId>grpc-server-spring-boot-starter</artifactId>
+			<version>2.0.1.RELEASE</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -90,6 +98,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 		</plugins>
 	</build>
 </project>

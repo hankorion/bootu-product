@@ -15,6 +15,9 @@ spring:
     enabled: true
     sampler:
       probability: 1.0
+grpc:
+  server:
+    port: 9002
 eureka:
   client:
     service-url:

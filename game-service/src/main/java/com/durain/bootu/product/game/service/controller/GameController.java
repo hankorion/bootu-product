@@ -26,10 +26,12 @@ import com.durain.bootu.product.game.service.vo.ResultVO;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequestMapping("/games")
 @Api(description = "Game Services", tags = { "Games" })
+@Slf4j
 public class GameController {
 
 	@Autowired

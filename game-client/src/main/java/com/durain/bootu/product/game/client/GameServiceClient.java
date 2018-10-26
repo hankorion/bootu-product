@@ -31,7 +31,6 @@ public interface GameServiceClient {
 		@Override
 		public void decreaseGameStock(List<GameDescreaseStockRequest> cardDTOList) {
 			// TODO Auto-generated method stub
-
 		}
 
 	}

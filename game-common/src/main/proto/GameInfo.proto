@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.durain.bootu.product.game.grpc.lib";
+option java_outer_classname = "GamesListProto";
+
+// The GameServices service definition.
+service GameServices {
+    rpc gamesList (GamesListRequest) returns (GamesListResponse) {}
+}
+
+message GamesListRequest{
+
+}
+
+message GamesListResponse{
+	repeated GamesCategoryProto gamesCategoryProto = 1;
+}
+
+message GameInfoProto {
+	string gameId = 1;
+	string gameName = 2;
+	double gamePrice = 3;
+	string gameDescription = 4;
+	string gameIcon = 5;
+}
+
+message GamesCategoryProto {
+    string message = 1;
+    string categoryName = 2;
+    int32 categoryType = 3;
+    repeated GameInfoProto gameInfoProto = 4;
+}
