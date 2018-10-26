@@ -1,9 +1,8 @@
 package com.durain.bootu.product.game.service;
 
-import java.util.ArrayList;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.protobuf.ProtobufHttpMessageConverter;
 
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
@@ -30,4 +29,9 @@ public class Swagger2Config {
 		return new ApiInfoBuilder().title("Bootu:Game API Document").description("Boot Your Games")
 				.termsOfServiceUrl("https://hankorion.github.io").version("1.0").build();
 	}
+	
+    @Bean
+    ProtobufHttpMessageConverter protobufHttpMessageConverter() {
+        return new ProtobufHttpMessageConverter();
+    }
 }

@@ -29,6 +29,11 @@
 			<artifactId>spring-cloud-starter-zipkin</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>io.github.openfeign</groupId>
+			<artifactId>feign-core</artifactId>
+			<version>10.0.1</version>
+		</dependency>
+		<dependency>
 			<groupId>com.durain.bootu</groupId>
 			<artifactId>game-common</artifactId>
 		</dependency>
