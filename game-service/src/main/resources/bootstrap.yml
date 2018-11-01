@@ -21,7 +21,7 @@ grpc:
 eureka:
   client:
     service-url:
-      defaultZone: http://bootu-eureka-1:8861/eureka/,http://bootu-eureka-2:8861/eureka/
+      defaultZone: http://bootu-eureka-1:8861/eureka/,http://bootu-eureka-2:8862/eureka/
   instance:
     prefer-ip-address: true
 logging:
